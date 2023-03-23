@@ -261,7 +261,7 @@ def build_in_container(
                 )
             elif build_options.build_frontend == "build":
                 verbosity_setting = " ".join(verbosity_flags)
-                if verbosity_settings:
+                if verbosity_setting:
                     extra_flags += (f"--config-setting={verbosity_setting}",)
                 container.call(
                     [
